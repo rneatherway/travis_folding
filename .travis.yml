@@ -5,10 +5,8 @@ matrix:
 
 script:
   - make
-  - echo "travis_fold:start:make2"
-  - echo "output2"
-  - echo "travis_fold:end:make2"
-  - echo "travis_fold:start:make3"
-  - echo "output3"
-  - echo "travis_fold:end:make3"
+  - echo -e "travis_fold:start:make3\nline5\nline6\ntravis_fold:end:make3\n\nbetween\n\ntravis_fold:start:make4\nline7\nline8\ntravis_fold:end:make4\n"
+  - echo "travis_fold:start:make5"
+  - echo "line9"
+  - echo "travis_fold:end:make5"
   - echo "end"
