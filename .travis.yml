@@ -12,3 +12,4 @@ script:
   - echo "travis_fold:start:make3"
   - echo "output3"
   - echo "travis_fold:end:make3"
+  - echo "end"
